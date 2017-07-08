@@ -14,12 +14,12 @@
     }],
     "deploy": {
         "production": {
-            "user": "root",
+            "user": "ubuntu",
             "host": ["119.29.114.186"],
             "port": 22,
             "ref": "origin/master",
             "repo": "https://github.com/zhangcuicui123/manage.git",
-            "path": "/root/wwwroot/manage",
+            "path": "/home/www/manage",
             "ssh_options": "StrictHostKeyChecking=no",
             "env": {
                 "NODE_ENV": "production"
