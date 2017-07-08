@@ -1,0 +1,29 @@
+{
+    "apps": [{
+        "name": "manage",
+        "script": "app.js",
+        "env": {
+            "COMMON_VARIABLE": "true"
+        },
+        "env_production": {
+            "NODE_ENV": "production"
+        }
+    }, {
+        "name": "WEB",
+        "script": "web.js"
+    }],
+    "deploy": {
+        "production": {
+            "user": "root",
+            "host": ["119.29.114.186"],
+            "port": 22,
+            "ref": "origin/master",
+            "repo": "https://github.com/zhangcuicui123/manage.git",
+            "path": "/home/wwwroot/manage",
+            "ssh_options": "StrictHostKeyChecking=no",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    }
+}
