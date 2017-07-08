@@ -19,7 +19,7 @@
             "port": 22,
             "ref": "origin/master",
             "repo": "https://github.com/zhangcuicui123/manage.git",
-            "path": "/home/wwwroot/manage",
+            "path": "/root/wwwroot/manage",
             "ssh_options": "StrictHostKeyChecking=no",
             "env": {
                 "NODE_ENV": "production"
